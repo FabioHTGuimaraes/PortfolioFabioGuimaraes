@@ -1,3 +1,5 @@
+/* Adiciona estilo para todo projeto */
+
 /* Importa a fonte Roboto Mono do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
@@ -14,7 +16,7 @@ body {
 
 
 
-
+/* Adiciona estilo para o inicio do projeto */
 
 #inicio-centro {
     display: flex;
@@ -84,7 +86,7 @@ nav a:hover {
 }
 
 
-
+/* Adiciona estilo para a aba sobre mim do projeto */
 
 #Sobre {
     display: flex;
@@ -114,7 +116,7 @@ nav a:hover {
 
 
 
-
+/* Adiciona estilo para a aba Conhecimentos do projeto */
 
 #Conhecimentos {
     align-items: flex-start;
@@ -149,7 +151,7 @@ nav a:hover {
 
 
 
-
+/* Adiciona estilo para a aba de Projetos */
 
 #Projetos {
     align-items: flex-start;
@@ -244,7 +246,7 @@ nav a:hover {
 
 
 
-
+/* Adiciona estilo para a aba Contato do projeto */
 
 #Contato {
     justify-content: space-between;
@@ -300,7 +302,7 @@ nav a:hover {
 
 
 
-
+/* Adiciona estilo para o rodapé do projeto */
 
 footer {
     display: flex;
@@ -311,4 +313,302 @@ footer {
 
 p {
     font-weight: bold;
+}
+
+
+
+
+
+/* ----- MEDIA QUERIES ----- */
+
+/* Dispositivos pequenos (até 768px) */
+@media (max-width: 768px) {
+
+    /* Adiciona estilo para todo projeto */
+
+    * {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    /* Adiciona estilo para o inicio do projeto */
+
+    #inicio-centro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #inicio-centro > div {
+        display: flex; 
+        flex-direction: column;
+        justify-content: flex-start; 
+        align-items: flex-start; 
+    }
+
+    #texto-centro1 {
+        font-size: 1.8rem;
+    }
+
+    #texto-centro2 {
+        font-size: 1rem;
+        margin-top: 2px; 
+        overflow: hidden;
+        border-right: 2px solid #91C8E4;
+        white-space: nowrap;
+        animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #img-centro {
+        flex-direction: column;
+        position: relative;
+        margin: 70%;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 92%;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+
+    /* Adiciona estilo para a aba sobre mim do projeto */
+
+    #Sobre {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #img-eu {
+        width: 400px;
+        margin-bottom: 20px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    #texto-sobre1 {
+        font-size: 40px;
+        text-align: justify;
+    }
+
+    #texto-sobre2 {
+        text-align: justify;
+        font-size: 17px;
+        margin-top: 12px;
+        font-weight: normal;
+    }
+
+
+
+    /* Adiciona estilo para a aba Conhecimentos do projeto */
+
+    #Conhecimentos {
+        align-items: flex-start;
+        margin: 15%;
+    }
+
+    #texto-conhecimento1{
+        font-size: 40px;
+    }
+
+    #texto-conhecimento2 {
+        text-align: left;
+        margin-top: 20px;
+        width: 90%;
+        padding: 10px;
+        border-radius: 5px;
+        flex: 0 0 30%;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .conhecimentos-list {
+        flex-direction: column;
+    }
+
+
+
+    /* Adiciona estilo para a aba de Projetos */
+
+    #Projetos { 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column; 
+        margin-bottom: 20%; 
+    } 
+    
+    #Projetos #carousel-container { 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        width: 100%; 
+    } 
+    
+    #texto-projetos1 { 
+        font-size: 40px; 
+    } 
+    
+    #card { 
+        border: 3px solid #000; 
+        border-radius: 20px; 
+        width: 280px;
+    } 
+        
+    #card-img { 
+        width: 100%; 
+        border-top-left-radius: 18px; 
+        border-top-right-radius: 18px; 
+    } 
+    
+    #card-titulo { 
+        font-size: 14px; 
+        margin: 10px; 
+        text-align: justify;
+    } 
+    
+    #icons-card { 
+        margin: 10px; 
+        font-size: 20px; 
+        text-align: end; 
+    } 
+    
+    #card-texto { 
+        font-size: 12px; 
+        margin: 10px; 
+        margin-top: 20px; 
+        text-align: justify; 
+        font-weight: normal;
+    }
+            
+    #card-conhecimentos { 
+        font-size: 12px; 
+        margin: 10px; 
+        margin-top: 20px; 
+        text-align: justify; 
+        font-weight: normal; 
+    } 
+
+    .carousel-btn.left, .carousel-btn.right { 
+        display: none;
+    }
+
+
+
+    /* Adiciona estilo para a aba Contato do projeto */
+
+    #Contato {
+        justify-content: space-between;
+        margin: 15%;
+    }
+
+    #texto-contato1 {
+        font-size: 40px;
+        text-align: justify;
+    }
+
+    #texto-contato2 {
+        text-align: justify;
+        font-size: 17px;
+        margin-top: 12px;
+        font-weight: normal;
+    }
+
+    #img-contato {
+        display: none;
+    }
+
+    #img-contato img {
+        margin-top: -335px;
+    }
+
+    #social {
+        align-items: flex-start;
+        justify-content: center; 
+        list-style: none;
+        margin-top: 30px; 
+    }
+
+    #social button {
+        background: none;
+        border: none;
+        color: #ffffff;
+        font-size: 70px;
+        cursor: pointer;
+        margin: 0 10px;
+    }
+
+    #social button:hover {
+        color: #91C8E4;
+    }
+
+    #social button:focus {
+        outline: none;
+    }
+
+
+
+    /* Adiciona estilo para o rodapé do projeto */
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2em 20px;
+        margin-top: 10%;
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    #p1 {
+        display: none;
+    }
+
+}
+
+/* Dispositivos muito pequenos (até 480px) */
+@media (max-width: 480px) {
+    #texto-centro1, #texto-sobre1, #texto-projetos1 {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    #texto-conhecimento1 {
+        font-size: 1.2rem;
+    }
+
+    #texto-centro2, #texto-sobre2 {
+        font-size: 0.8rem;
+    }
+
+    #img-centro, #img-eu {
+        width: 100%;
+    }
+
+    #social button {
+        font-size: 1.2rem;
+    }
 }

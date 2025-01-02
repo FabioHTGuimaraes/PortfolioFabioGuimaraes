@@ -472,7 +472,7 @@ p {
     #card { 
         border: 3px solid #000; 
         border-radius: 20px; 
-        width: 280px;
+        width: 250px;
     } 
         
     #card-img { 
@@ -558,14 +558,6 @@ p {
         margin: 0 10px;
     }
 
-    #social button:hover {
-        color: #91C8E4;
-    }
-
-    #social button:focus {
-        outline: none;
-    }
-
 
 
     /* Adiciona estilo para o rodapé do projeto */
@@ -609,6 +601,6 @@ p {
     }
 
     #social button {
-        font-size: 1.2rem;
+        font-size: 15px;
     }
 }

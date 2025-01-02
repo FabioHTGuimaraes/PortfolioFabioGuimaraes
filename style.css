@@ -160,7 +160,7 @@ nav a:hover {
 }
 
 #Projetos #carousel-container {
-    width: 1350px; 
+    width: 100%; 
     overflow: hidden;
     margin: 0 auto;
     position: relative;
@@ -179,7 +179,7 @@ nav a:hover {
     margin-top: 30px;
     margin-right: 5px;
     flex: 0 0 337px;
-    width: 400px;
+    width: 100%;
     border: 3px solid #000;
     border-radius: 20px;
 }
@@ -250,7 +250,7 @@ nav a:hover {
 
 #Contato {
     justify-content: space-between;
-    margin: 15%;
+    margin: 10%;
 }
 
 #texto-contato1 {
@@ -401,7 +401,7 @@ p {
     }
 
     #img-eu {
-        width: 400px;
+        width: 100%;
         margin-bottom: 20px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
@@ -471,7 +471,7 @@ p {
     #card { 
         border: 3px solid #000; 
         border-radius: 20px; 
-        width: 250px;
+        width: 90%;
     } 
         
     #card-img { 
@@ -552,7 +552,7 @@ p {
         background: none;
         border: none;
         color: #ffffff;
-        font-size: 70px;
+        font-size: 60px;
         cursor: pointer;
         margin: 0 10px;
     }
@@ -613,11 +613,11 @@ p {
     }
 
     #texto-centro1 {
-        font-size: 1.8rem;
+        font-size: 3rem;
     }
 
     #texto-centro2 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-top: 2px; 
         overflow: hidden;
         border-right: 2px solid #91C8E4;
@@ -640,7 +640,7 @@ p {
             width: 0;
         }
         to {
-            width: 92%;
+            width: 85%;
         }
     }
 
@@ -660,7 +660,7 @@ p {
     }
 
     #img-eu {
-        width: 400px;
+        width: 100%;
         margin-bottom: 20px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
@@ -730,7 +730,7 @@ p {
     #card { 
         border: 3px solid #000; 
         border-radius: 20px; 
-        width: 250px;
+        width: 90%;
     } 
         
     #card-img { 
@@ -811,7 +811,7 @@ p {
         background: none;
         border: none;
         color: #ffffff;
-        font-size: 70px;
+        font-size: 60px;
         cursor: pointer;
         margin: 0 10px;
     }
@@ -901,7 +901,7 @@ p {
             width: 0;
         }
         to {
-            width: 92%;
+            width: 95%;
         }
     }
 
@@ -921,7 +921,7 @@ p {
     }
 
     #img-eu {
-        width: 400px;
+        width: 100%;
         margin-bottom: 20px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
@@ -991,7 +991,7 @@ p {
     #card { 
         border: 3px solid #000; 
         border-radius: 20px; 
-        width: 250px;
+        width: 90%;
     } 
         
     #card-img { 
@@ -1072,7 +1072,7 @@ p {
         background: none;
         border: none;
         color: #ffffff;
-        font-size: 70px;
+        font-size: 60px;
         cursor: pointer;
         margin: 0 10px;
     }
@@ -1133,7 +1133,7 @@ p {
     }
 
     #texto-centro1 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     #texto-centro2 {
@@ -1152,7 +1152,7 @@ p {
     #img-centro {
         flex-direction: column;
         position: relative;
-        margin: 70%;
+        width: 100%;
     }
 
     @keyframes typing {
@@ -1160,7 +1160,7 @@ p {
             width: 0;
         }
         to {
-            width: 92%;
+            width: 99%;
         }
     }
 
@@ -1180,8 +1180,8 @@ p {
     }
 
     #img-eu {
-        width: 400px;
-        margin-bottom: 20px;
+        width: 100%;
+        margin-bottom: 10px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 
@@ -1207,7 +1207,7 @@ p {
     }
 
     #texto-conhecimento1{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     #texto-conhecimento2 {
@@ -1250,7 +1250,7 @@ p {
     #card { 
         border: 3px solid #000; 
         border-radius: 20px; 
-        width: 250px;
+        width: 90%;
     } 
         
     #card-img { 
@@ -1331,7 +1331,7 @@ p {
         background: none;
         border: none;
         color: #ffffff;
-        font-size: 70px;
+        font-size: 50px;
         cursor: pointer;
         margin: 0 10px;
     }

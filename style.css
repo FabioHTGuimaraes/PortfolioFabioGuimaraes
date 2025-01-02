@@ -1,0 +1,314 @@
+/* Importa a fonte Roboto Mono do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "roboto mono", sans-serif;
+    background: #333;
+    color: #fff;
+}
+
+
+
+
+
+#inicio-centro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 18%;
+}
+
+#inicio-centro > div {
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+}
+
+#texto-centro1 {
+    font-size: 40px;
+    text-align: justify;
+}
+
+#texto-centro2 {
+    font-size: 20px;
+    margin-top: 2px; 
+    text-align: justify;
+    display: inline-block;
+    overflow: hidden;
+    border-right: 2px solid #91C8E4;
+    white-space: nowrap;
+    animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite; /* Aplica as animações */
+}
+
+nav {
+    margin-top: 10px; 
+    font-size: 20px;
+}
+
+nav a { 
+    color: white; 
+    text-decoration: none; 
+    margin: 5px 0; 
+} 
+
+nav a:hover { 
+    text-decoration: none; 
+    color: #91C8E4;
+}
+
+#img-centro {
+    width: 500px;
+    position: relative;
+    top: -160px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 71%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+
+
+#Sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#img-eu {
+    width: 400px;
+    margin-right: 40px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#texto-sobre1 {
+    font-size: 40px;
+    text-align: justify;
+}
+
+#texto-sobre2 {
+    text-align: justify;
+    font-size: 17px;
+    margin-top: 12px;
+    font-weight: normal;
+}
+
+
+
+
+
+#Conhecimentos {
+    align-items: flex-start;
+    margin: 15%;
+}
+
+#texto-conhecimento1{
+    font-size: 40px;
+}
+
+#texto-conhecimento2 {
+    text-align: left;
+    margin-top: 20px;
+    width: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 0 0 30%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#texto-conhecimento2 :hover {
+    color: #91C8E4;
+}
+
+.conhecimentos-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 20px; 
+    margin-top: 30px;
+}
+
+
+
+
+
+#Projetos {
+    align-items: flex-start;
+    margin: 15%;
+    margin-bottom: 20%;
+}
+
+#Projetos #carousel-container {
+    width: 1350px; 
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+#Projetos #carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+#texto-projetos1{
+    font-size: 40px;
+}
+
+#card {
+    margin-top: 30px;
+    margin-right: 5px;
+    flex: 0 0 337px;
+    width: 400px;
+    border: 3px solid #000;
+    border-radius: 20px;
+}
+
+#card-img {
+    width: 400px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+#card-titulo {
+    font-size: 20px;
+    margin: 10px;
+}
+
+#icons-card {
+    margin: 10px;
+    font-size: 20px;
+    text-align: end;
+}
+
+#icons-card :hover {
+    color: #91C8E4;
+    cursor: pointer;
+}
+
+#card-texto {
+    font-size: 15px;
+    margin: 10px;
+    margin-top: 20px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+#card-conhecimentos {
+    font-size: 15px;
+    margin: 10px;
+    margin-top: 20px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+    padding: 10px;
+}
+
+.carousel-btn.left {
+    left: 0;
+}
+
+.carousel-btn.right {
+    right: 0;
+}
+
+
+
+
+
+
+#Contato {
+    justify-content: space-between;
+    margin: 15%;
+}
+
+#texto-contato1 {
+    font-size: 40px;
+    text-align: justify;
+}
+
+#texto-contato2 {
+    text-align: justify;
+    font-size: 17px;
+    margin-top: 12px;
+    font-weight: normal;
+}
+
+#img-contato {
+    display: flex;
+    justify-content: end; 
+    align-items: end; 
+    text-align: end;
+}
+
+#img-contato img {
+    margin-top: -335px;
+}
+
+#social {
+    align-items: flex-start;
+    justify-content: center; 
+    list-style: none;
+    margin-top: 30px; 
+}
+
+#social button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 70px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#social button:hover {
+    color: #91C8E4;
+}
+
+#social button:focus {
+    outline: none;
+}
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 20px;
+    margin-top: -200px;
+}
+
+p {
+    font-weight: bold;
+}

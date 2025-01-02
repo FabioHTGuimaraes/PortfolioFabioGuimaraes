@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Inclui o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Define o ícone da página -->
+    <link rel="icon" href="img/Fabio_Guimarâes__1_-removebg-preview.png">
+
+    <!-- Inclui o arquivo de script JavaScript -->
+    <script src="script.js"></script>
+
+    <!--Links do bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!--Nome da pagina-->
+    <title>Fabio Guimarães - Portfólio</title>
+
+</head>
+
+<body>
+    
+    <!-- Conteúdo principal -->
+    <main>
+
+        <div id="inicio-centro">
+
+            <div>
+
+                <h1 id="texto-centro1">Fabio Guimarães</h1>
+
+                <h2 id="texto-centro2"> <i class="bi bi-code-slash"></i> Desenvolvedor FullStack</h2><br>
+
+                <nav> 
+                    <a href="#Sobre">Sobre</a> 
+                    <a href="#Conhecimentos">Conhecimentos</a> 
+                    <a href="#Projetos">Projetos</a> 
+                    <a href="#Contato">Contato</a>
+                </nav>
+
+            </div>
+
+            <img src="img/Logo principal.png" id="img-centro">
+
+        </div><br><br>
+
+        <div id="Sobre">
+
+            <img src="img/eu.jpg" id="img-eu">
+            
+            <div>
+
+                <h1 id="texto-sobre1">Sobre mim</h1>
+
+                <h2 id="texto-sobre2">
+                    Atualmente cursando Análise e Desenvolvimento de Sistemas na UNISUAM, sou apaixonado pelo mundo da tecnologia e desenvolvimento. Minha jornada acadêmica tem sido marcada por dedicação, curiosidade e vontade constante de aprender e evoluir.<br><br>
+
+                    Participei de projetos acadêmicos, onde tive a oportunidade de aplicar conhecimentos teóricos em práticas reais, desenvolvendo soluções criativas e funcionais. Além disso, participei de apresentações e trabalhos colaborativos, aprimorando minhas habilidades de comunicação, trabalho em equipe e resolução de problemas.<br><br>
+                    
+                    Amo o que faço e estou sempre em busca de novas oportunidades para contribuir com projetos inovadores que impactem positivamente as pessoas e as organizações. Estou animado para compartilhar meus projetos e continuar crescendo nesse universo dinâmico da tecnologia.
+                </h2><br>
+
+            </div>
+
+        </div><br><br>
+
+        <div id="Conhecimentos">
+
+            <div>
+
+                <h1 id="texto-conhecimento1">Linguagens e tecnologias</h1>
+
+            </div>
+            
+            <div class="conhecimentos-list">
+
+                <h3 id="texto-conhecimento2"> <i class="bi bi-arrow-right-circle"></i> Html </h3>
+                <h3 id="texto-conhecimento2"> <i class="bi bi-arrow-right-circle"></i> Css </h3>
+                <h3 id="texto-conhecimento2"> <i class="bi bi-arrow-right-circle"></i> JavaScript </h3>
+                <h3 id="texto-conhecimento2"> <i class="bi bi-arrow-right-circle"></i> PHP </h3>
+                <h3 id="texto-conhecimento2"> <i class="bi bi-arrow-right-circle"></i> React </h3>
+                <h3 id="texto-conhecimento2"> <i class="bi bi-arrow-right-circle"></i> MySQL </h3>
+                <h3 id="texto-conhecimento2"> <i class="bi bi-arrow-right-circle"></i> TypeScript </h3>
+                <h3 id="texto-conhecimento2"> <i class="bi bi-arrow-right-circle"></i> Apis </h3>
+                <h3 id="texto-conhecimento2"> <i class="bi bi-arrow-right-circle"></i> Outros... </h3>
+
+            </div>
+
+        </div>
+
+        <div id="Projetos">
+
+            <h1 id="texto-projetos1">Projetos</h1>
+
+
+            <!-- Contêiner do carrossel -->
+            <div id="carousel-container">
+
+                <button class="carousel-btn left" onclick="moveCarousel(-1)">❮</button>
+
+                <div id="carousel">
+
+                   <div id="card">
+                        <img src="img/LoginModavo.png" id="card-img">
+
+                        <div id="card-corpo">
+
+                            <h5 id="card-titulo">Tela De Login Modavo</h5>
+                            <h5 id="card-texto">A tela de login foi desenvolvida como parte do projeto acadêmico do 3º semestre do curso de Análise e Desenvolvimento de Sistemas. O objetivo principal foi criar uma interface funcional e segura para o acesso ao sistema da CPaaS Modavo, oferecendo uma experiência intuitiva e eficiente para os usuários.</h5>
+                            <h5 id="card-conhecimentos">Html - Css - JavaScript</h5>
+                            <div id="icons-card"> <i class="bi bi-github" onclick="redirecionarParaPagina6()"></i> <i class="bi bi-globe2" onclick="redirecionarParaPagina7()"></i> </div>
+
+                        </div>
+                    </div>
+
+                    <div id="card">
+                        <img src="img/CadastroModavo.png" id="card-img">
+
+                        <div id="card-corpo">
+
+                            <h5 id="card-titulo">Tela De Cadastro Modavo</h5>
+                            <h5 id="card-texto">A tela de cadastro foi desenvolvida como parte do projeto acadêmico do 3º semestre do curso de Análise e Desenvolvimento de Sistemas. O objetivo principal foi criar uma interface funcional e segura para o acesso ao sistema da CPaaS Modavo, oferecendo uma experiência intuitiva e eficiente para os usuários.</h5>
+                            <h5 id="card-conhecimentos">Html - Css - JavaScript - JQuery</h5>
+                            <div id="icons-card"> <i class="bi bi-github" onclick="redirecionarParaPagina8()"></i> <i class="bi bi-globe2" onclick="redirecionarParaPagina9()"></i> </div>
+
+                        </div>
+                    </div>
+
+                    <div id="card">
+                        <img src="img/Videoke.png" id="card-img">
+
+                        <div id="card-corpo">
+
+                            <h5 id="card-titulo">Catálago De Músicas Videokê</h5>
+                            <h5 id="card-texto">O Catálogo de Músicas Videokê foi desenvolvido com o objetivo de oferecer uma experiência prática, organizada e intuitiva na hora de escolher a música para cantar. Com um total de 1006 músicas, o catálogo apresenta a facilidade de buscar por nome da música, cantor/compositor ou código.</h5>
+                            <h5 id="card-conhecimentos">Html - Css - JavaScript</h5>
+                            <div id="icons-card"> <i class="bi bi-github" onclick="redirecionarParaPagina10()"></i> <i class="bi bi-globe2" onclick="redirecionarParaPagina11()"></i> </div>
+
+                        </div>
+                    </div>
+                    
+                    <div id="card">
+                        <img src="img/Heloiza.png" id="card-img">
+
+                        <div id="card-corpo">
+
+                            <h5 id="card-titulo">Contagem Regressiva De Namoro</h5>
+                            <h5 id="card-texto">Este projeto especial foi desenvolvido com carinho e dedicação para marcar a contagem regressiva até o próximo aniversário de namoro. A aplicação apresenta um contador em tempo real, exibindo de forma clara e precisa os dias, horas, minutos e segundos restantes para a data tão aguardada todo ano.</h5>
+                            <h5 id="card-conhecimentos">Html - Css - JavaScript</h5>
+                            <div id="icons-card"> <i class="bi bi-github" onclick="redirecionarParaPagina12()"></i> <i class="bi bi-globe2" onclick="redirecionarParaPagina13()"></i> </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-btn right" onclick="moveCarousel(1)">❯</button>
+            
+            </div>
+
+        </div>
+
+        <div id="Contato">
+
+            <div>
+
+                <h1 id="texto-contato">Entre em contato</h1>
+
+            </div>
+
+            <h2 id="texto-contato2">Fique a vontade para entrar em contato comigo via rede social ou e-mail</h2>
+
+            <ul id="social">
+              <button onclick="redirecionarParaPagina1()"><i class="bi bi-instagram" id="icon1"></i></button>
+              <button onclick="redirecionarParaPagina2()"><i class="bi bi-linkedin" id="icon1"></i></button>
+              <button onclick="redirecionarParaPagina5()"><i class="bi bi-youtube" id="icon1"></i></button>
+              <button onclick="redirecionarParaPagina4()"><i class="bi bi-envelope-paper" id="icon1"></i></button>
+              <button onclick="redirecionarParaPagina14()"><i class="bi bi-whatsapp" id="icon"></i></button>
+              <button onclick="redirecionarParaPagina3()"><i class="bi bi-github" id="icon"></i></button>
+            </ul>
+
+
+            <div id="img-contato">
+
+                <img src="img/Fabio_Guimarâes__1_-removebg-preview.png">
+
+            </div>
+
+        </div>
+  
+    </main>
+    
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; Todos os direitos reservados.</p>
+        <p>Desenvolvido por Fabio Guimarães</p>
+    </footer>
+
+</body>
+
+</html>

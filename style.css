@@ -160,7 +160,7 @@ nav a:hover {
 }
 
 #Projetos #carousel-container {
-    width: 100%; 
+    width: 1350px; 
     overflow: hidden;
     margin: 0 auto;
     position: relative;
@@ -179,7 +179,7 @@ nav a:hover {
     margin-top: 30px;
     margin-right: 5px;
     flex: 0 0 337px;
-    width: 100%;
+    width: 400px;
     border: 3px solid #000;
     border-radius: 20px;
 }
@@ -250,7 +250,7 @@ nav a:hover {
 
 #Contato {
     justify-content: space-between;
-    margin: 10%;
+    margin: 15%;
 }
 
 #texto-contato1 {
@@ -307,13 +307,21 @@ nav a:hover {
 footer {
     display: flex;
     justify-content: space-between;
-    padding: 2em 20px;
-    margin-top: -200px;
+    align-items: center;
+    padding: 10px 0; 
+    width: 100%; 
+    position: relative; 
+    bottom: 0;
 }
 
-p {
-    font-weight: bold;
+footer p {
+    margin: 2%; 
+    padding: 0; 
 }
+
+#clique-footer:hover{
+    cursor: pointer;
+}  
 
 
 
@@ -321,526 +329,7 @@ p {
 
 /* ----- MEDIA QUERIES ----- */
 
-/*  Dispositivos telas de desktop padrão (até 1440px) */
-@media (max-width: 1440px) {
-    /* Adiciona estilo para todo projeto */
-
-    * {
-        margin: 0;
-        padding: 0;
-        flex-direction: column;
-    }
-
-    body {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-
-    /* Adiciona estilo para o inicio do projeto */
-
-    #inicio-centro {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #inicio-centro > div {
-        display: flex; 
-        flex-direction: column;
-        justify-content: flex-start; 
-        align-items: flex-start; 
-    }
-
-    #texto-centro1 {
-        font-size: 1.8rem;
-    }
-
-    #texto-centro2 {
-        font-size: 1rem;
-        margin-top: 2px; 
-        overflow: hidden;
-        border-right: 2px solid #91C8E4;
-        white-space: nowrap;
-        animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
-    }
-
-    nav {
-        display: none;
-    }
-
-    #img-centro {
-        flex-direction: column;
-        position: relative;
-        margin: 70%;
-    }
-
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-        to {
-            width: 100%;
-        }
-    }
-
-    @keyframes blink {
-        50% {
-            border-color: transparent;
-        }
-    }
-
-
-    /* Adiciona estilo para a aba sobre mim do projeto */
-
-    #Sobre {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    #img-eu {
-        width: 100%;
-        margin-bottom: 20px;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    }
-
-    #texto-sobre1 {
-        font-size: 40px;
-        text-align: justify;
-    }
-
-    #texto-sobre2 {
-        text-align: justify;
-        font-size: 17px;
-        margin-top: 12px;
-        font-weight: normal;
-    }
-
-
-
-    /* Adiciona estilo para a aba Conhecimentos do projeto */
-
-    #Conhecimentos {
-        align-items: flex-start;
-        margin: 15%;
-    }
-
-    #texto-conhecimento1{
-        font-size: 40px;
-    }
-
-    #texto-conhecimento2 {
-        text-align: left;
-        margin-top: 20px;
-        width: 90%;
-        padding: 10px;
-        border-radius: 5px;
-        flex: 0 0 30%;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    }
-
-    .conhecimentos-list {
-        flex-direction: column;
-    }
-
-
-
-    /* Adiciona estilo para a aba de Projetos */
-
-    #Projetos { 
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        flex-direction: column; 
-        margin-bottom: 20%; 
-    } 
-
-    #Projetos #carousel-container { 
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        width: 100%; 
-    } 
-
-    #texto-projetos1 { 
-        font-size: 40px; 
-    } 
-
-    #card { 
-        border: 3px solid #000; 
-        border-radius: 20px; 
-        width: 90%;
-    } 
-        
-    #card-img { 
-        width: 100%; 
-        border-top-left-radius: 18px; 
-        border-top-right-radius: 18px; 
-    } 
-
-    #card-titulo { 
-        font-size: 14px; 
-        margin: 10px; 
-        text-align: justify;
-    } 
-
-    #icons-card { 
-        margin: 10px; 
-        font-size: 20px; 
-        text-align: end; 
-    } 
-
-    #card-texto { 
-        font-size: 12px; 
-        margin: 10px; 
-        margin-top: 20px; 
-        text-align: justify; 
-        font-weight: normal;
-    }
-            
-    #card-conhecimentos { 
-        font-size: 12px; 
-        margin: 10px; 
-        margin-top: 20px; 
-        text-align: justify; 
-        font-weight: normal; 
-    } 
-
-    .carousel-btn.left, .carousel-btn.right { 
-        display: none;
-    }
-
-
-
-    /* Adiciona estilo para a aba Contato do projeto */
-
-    #Contato {
-        justify-content: space-between;
-        margin: 15%;
-    }
-
-    #texto-contato1 {
-        font-size: 40px;
-        text-align: justify;
-    }
-
-    #texto-contato2 {
-        text-align: justify;
-        font-size: 17px;
-        margin-top: 12px;
-        font-weight: normal;
-    }
-
-    #img-contato {
-        display: none;
-    }
-
-    #img-contato img {
-        margin-top: -335px;
-    }
-
-    #social {
-        align-items: flex-start;
-        justify-content: center; 
-        list-style: none;
-        margin-top: 30px; 
-    }
-
-    #social button {
-        background: none;
-        border: none;
-        color: #ffffff;
-        font-size: 60px;
-        cursor: pointer;
-        margin: 0 10px;
-    }
-
-
-
-    /* Adiciona estilo para o rodapé do projeto */
-
-    footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2em 20px;
-        margin-top: 10%;
-    }
-
-    p {
-        font-weight: bold;
-        font-size: 12px;
-    }
-
-    #p1 {
-        display: none;
-    }
-
-}
-
-/*  Dispositivos tablets maiores (até 1024px) */
-@media (max-width: 1024px) {
-    /* Adiciona estilo para todo projeto */
-
-    * {
-        margin: 0;
-        padding: 0;
-        flex-direction: column;
-    }
-
-    body {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-
-    /* Adiciona estilo para o inicio do projeto */
-
-    #inicio-centro {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #inicio-centro > div {
-        display: flex; 
-        flex-direction: column;
-        justify-content: flex-start; 
-        align-items: flex-start; 
-    }
-
-    #texto-centro1 {
-        font-size: 3rem;
-    }
-
-    #texto-centro2 {
-        font-size: 1.5rem;
-        margin-top: 2px; 
-        overflow: hidden;
-        border-right: 2px solid #91C8E4;
-        white-space: nowrap;
-        animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
-    }
-
-    nav {
-        display: none;
-    }
-
-    #img-centro {
-        flex-direction: column;
-        position: relative;
-        margin: 70%;
-    }
-
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-        to {
-            width: 85%;
-        }
-    }
-
-    @keyframes blink {
-        50% {
-            border-color: transparent;
-        }
-    }
-
-
-    /* Adiciona estilo para a aba sobre mim do projeto */
-
-    #Sobre {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    #img-eu {
-        width: 100%;
-        margin-bottom: 20px;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    }
-
-    #texto-sobre1 {
-        font-size: 40px;
-        text-align: justify;
-    }
-
-    #texto-sobre2 {
-        text-align: justify;
-        font-size: 17px;
-        margin-top: 12px;
-        font-weight: normal;
-    }
-
-
-
-    /* Adiciona estilo para a aba Conhecimentos do projeto */
-
-    #Conhecimentos {
-        align-items: flex-start;
-        margin: 15%;
-    }
-
-    #texto-conhecimento1{
-        font-size: 40px;
-    }
-
-    #texto-conhecimento2 {
-        text-align: left;
-        margin-top: 20px;
-        width: 90%;
-        padding: 10px;
-        border-radius: 5px;
-        flex: 0 0 30%;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    }
-
-    .conhecimentos-list {
-        flex-direction: column;
-    }
-
-
-
-    /* Adiciona estilo para a aba de Projetos */
-
-    #Projetos { 
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        flex-direction: column; 
-        margin-bottom: 20%; 
-    } 
-
-    #Projetos #carousel-container { 
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        width: 100%; 
-    } 
-
-    #texto-projetos1 { 
-        font-size: 40px; 
-    } 
-
-    #card { 
-        border: 3px solid #000; 
-        border-radius: 20px; 
-        width: 90%;
-    } 
-        
-    #card-img { 
-        width: 100%; 
-        border-top-left-radius: 18px; 
-        border-top-right-radius: 18px; 
-    } 
-
-    #card-titulo { 
-        font-size: 14px; 
-        margin: 10px; 
-        text-align: justify;
-    } 
-
-    #icons-card { 
-        margin: 10px; 
-        font-size: 20px; 
-        text-align: end; 
-    } 
-
-    #card-texto { 
-        font-size: 12px; 
-        margin: 10px; 
-        margin-top: 20px; 
-        text-align: justify; 
-        font-weight: normal;
-    }
-            
-    #card-conhecimentos { 
-        font-size: 12px; 
-        margin: 10px; 
-        margin-top: 20px; 
-        text-align: justify; 
-        font-weight: normal; 
-    } 
-
-    .carousel-btn.left, .carousel-btn.right { 
-        display: none;
-    }
-
-
-
-    /* Adiciona estilo para a aba Contato do projeto */
-
-    #Contato {
-        justify-content: space-between;
-        margin: 15%;
-    }
-
-    #texto-contato1 {
-        font-size: 40px;
-        text-align: justify;
-    }
-
-    #texto-contato2 {
-        text-align: justify;
-        font-size: 17px;
-        margin-top: 12px;
-        font-weight: normal;
-    }
-
-    #img-contato {
-        display: none;
-    }
-
-    #img-contato img {
-        margin-top: -335px;
-    }
-
-    #social {
-        align-items: flex-start;
-        justify-content: center; 
-        list-style: none;
-        margin-top: 30px; 
-    }
-
-    #social button {
-        background: none;
-        border: none;
-        color: #ffffff;
-        font-size: 60px;
-        cursor: pointer;
-        margin: 0 10px;
-    }
-
-
-
-    /* Adiciona estilo para o rodapé do projeto */
-
-    footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2em 20px;
-        margin-top: 10%;
-    }
-
-    p {
-        font-weight: bold;
-        font-size: 12px;
-    }
-
-    #p1 {
-        display: none;
-    }
-
-}
-  
-
-/* Dispositivos Tablets (até 768px) */
+/* Dispositivos pequenos (até 768px) */
 @media (max-width: 768px) {
 
     /* Adiciona estilo para todo projeto */
@@ -901,7 +390,7 @@ p {
             width: 0;
         }
         to {
-            width: 95%;
+            width: 92%;
         }
     }
 
@@ -921,7 +410,7 @@ p {
     }
 
     #img-eu {
-        width: 100%;
+        width: 400px;
         margin-bottom: 20px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
@@ -991,7 +480,7 @@ p {
     #card { 
         border: 3px solid #000; 
         border-radius: 20px; 
-        width: 90%;
+        width: 250px;
     } 
         
     #card-img { 
@@ -1072,7 +561,7 @@ p {
         background: none;
         border: none;
         color: #ffffff;
-        font-size: 60px;
+        font-size: 70px;
         cursor: pointer;
         margin: 0 10px;
     }
@@ -1081,12 +570,8 @@ p {
 
     /* Adiciona estilo para o rodapé do projeto */
 
-    footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2em 20px;
-        margin-top: 10%;
+    footer {  
+        font-size: 50%;
     }
 
     p {
@@ -1100,59 +585,27 @@ p {
 
 }
 
-/* Dispositivos Smartphones (até 480px) */
+/* Dispositivos muito pequenos (até 480px) */
 @media (max-width: 480px) {
-    /* Adiciona estilo para todo projeto */
-
-    * {
-        margin: 0;
-        padding: 0;
-        flex-direction: column;
+    #texto-centro1, #texto-sobre1, #texto-projetos1 {
+        font-size: 1.5rem;
+        text-align: justify;
     }
 
-    body {
-        flex-direction: column;
-        align-items: center;
+    #texto-conhecimento1 {
+        font-size: 1.2rem;
     }
 
-
-
-    /* Adiciona estilo para o inicio do projeto */
-
-    #inicio-centro {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    #texto-centro2, #texto-sobre2 {
+        font-size: 0.8rem;
     }
 
-    #inicio-centro > div {
-        display: flex; 
-        flex-direction: column;
-        justify-content: flex-start; 
-        align-items: flex-start; 
-    }
-
-    #texto-centro1 {
-        font-size: 1.7rem;
-    }
-
-    #texto-centro2 {
-        font-size: 1rem;
-        margin-top: 2px; 
-        overflow: hidden;
-        border-right: 2px solid #91C8E4;
-        white-space: nowrap;
-        animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
-    }
-
-    nav {
-        display: none;
-    }
-
-    #img-centro {
-        flex-direction: column;
-        position: relative;
+    #img-centro, #img-eu {
         width: 100%;
+    }
+
+    #social button {
+        font-size: 15px;
     }
 
     @keyframes typing {
@@ -1160,7 +613,7 @@ p {
             width: 0;
         }
         to {
-            width: 99%;
+            width: 92%;
         }
     }
 
@@ -1170,191 +623,8 @@ p {
         }
     }
 
-
-    /* Adiciona estilo para a aba sobre mim do projeto */
-
-    #Sobre {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    #img-eu {
-        width: 100%;
-        margin-bottom: 10px;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    }
-
-    #texto-sobre1 {
-        font-size: 40px;
-        text-align: justify;
-    }
-
-    #texto-sobre2 {
-        text-align: justify;
-        font-size: 17px;
-        margin-top: 12px;
-        font-weight: normal;
-    }
-
-
-
-    /* Adiciona estilo para a aba Conhecimentos do projeto */
-
-    #Conhecimentos {
-        align-items: flex-start;
-        margin: 15%;
-    }
-
-    #texto-conhecimento1{
-        font-size: 30px;
-    }
-
-    #texto-conhecimento2 {
-        text-align: left;
-        margin-top: 20px;
-        width: 90%;
-        padding: 10px;
-        border-radius: 5px;
-        flex: 0 0 30%;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    }
-
-    .conhecimentos-list {
-        flex-direction: column;
-    }
-
-
-
-    /* Adiciona estilo para a aba de Projetos */
-
-    #Projetos { 
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        flex-direction: column; 
-        margin-bottom: 20%; 
-    } 
-    
-    #Projetos #carousel-container { 
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        width: 100%; 
-    } 
-    
-    #texto-projetos1 { 
-        font-size: 40px; 
-    } 
-    
-    #card { 
-        border: 3px solid #000; 
-        border-radius: 20px; 
-        width: 90%;
-    } 
-        
-    #card-img { 
-        width: 100%; 
-        border-top-left-radius: 18px; 
-        border-top-right-radius: 18px; 
-    } 
-    
-    #card-titulo { 
-        font-size: 14px; 
-        margin: 10px; 
-        text-align: justify;
-    } 
-    
-    #icons-card { 
-        margin: 10px; 
-        font-size: 20px; 
-        text-align: end; 
-    } 
-    
-    #card-texto { 
-        font-size: 12px; 
-        margin: 10px; 
-        margin-top: 20px; 
-        text-align: justify; 
-        font-weight: normal;
-    }
-            
-    #card-conhecimentos { 
-        font-size: 12px; 
-        margin: 10px; 
-        margin-top: 20px; 
-        text-align: justify; 
-        font-weight: normal; 
-    } 
-
-    .carousel-btn.left, .carousel-btn.right { 
-        display: none;
-    }
-
-
-
-    /* Adiciona estilo para a aba Contato do projeto */
-
-    #Contato {
-        justify-content: space-between;
-        margin: 15%;
-    }
-
-    #texto-contato1 {
-        font-size: 40px;
-        text-align: justify;
-    }
-
-    #texto-contato2 {
-        text-align: justify;
-        font-size: 17px;
-        margin-top: 12px;
-        font-weight: normal;
-    }
-
-    #img-contato {
-        display: none;
-    }
-
-    #img-contato img {
-        margin-top: -335px;
-    }
-
-    #social {
-        align-items: flex-start;
-        justify-content: center; 
-        list-style: none;
-        margin-top: 30px; 
-    }
-
-    #social button {
-        background: none;
-        border: none;
-        color: #ffffff;
-        font-size: 50px;
-        cursor: pointer;
-        margin: 0 10px;
-    }
-
-
-
-    /* Adiciona estilo para o rodapé do projeto */
-
-    footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2em 20px;
-        margin-top: 10%;
-    }
-
-    p {
-        font-weight: bold;
-        font-size: 12px;
-    }
-
-    #p1 {
-        display: none;
+    footer {  
+        font-size: 50%;
     }
 
 }

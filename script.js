@@ -28,28 +28,28 @@ function redirecionarParaPagina5() {
     window.open("https://www.youtube.com/@dev_fabioguimaraes", "_blank");
 }
 
-// Função para redirecionar para o github login modavo
+// Função para redirecionar para o github cardapio digital
 function redirecionarParaPagina6() {
     // Redireciona para outra página
-    window.open("https://github.com/FabioHTGuimaraes/Tela-De-Login-Modavo", "_blank");
+    window.open("https://github.com/FabioHTGuimaraes/Cardapio-Digital", "_blank");
 }
 
-// Função para redirecionar para o site login modavo
+// Função para redirecionar para o site cardapio digital
 function redirecionarParaPagina7() {
     // Redireciona para outra página
-    window.open("https://tela-de-login-modavo.netlify.app", "_blank");
+    window.open("https://cardapiodigitalfg.netlify.app/", "_blank");
 }
 
-// Função para redirecionar para o github cadastro modavo
+// Função para redirecionar para o github dgmarketing
 function redirecionarParaPagina8() {
     // Redireciona para outra página
-    window.open("https://github.com/FabioHTGuimaraes/Tela-De-Cadastro-Modavo", "_blank");
+    window.open("https://github.com/FabioHTGuimaraes/AgenciaDGMarketing", "_blank");
 }
 
-// Função para redirecionar para o site cadastro modavo
+// Função para redirecionar para o site dgmarketing
 function redirecionarParaPagina9() {
     // Redireciona para outra página
-    window.open("https://tela-de-cadastro-modavo.netlify.app", "_blank");
+    window.open("https://agenciadgmarketing.netlify.app/", "_blank");
 }
 
 // Função para redirecionar para o github catalago de musicas videoke
@@ -61,7 +61,7 @@ function redirecionarParaPagina10() {
 // Função para redirecionar para o site catalago de musicas videoke
 function redirecionarParaPagina11() {
     // Redireciona para outra página
-    window.open("https://catalagovideokeguimaraes.netlify.app/", "_blank");
+    window.open("https://catalagovideoke.netlify.app/", "_blank");
 }
 
 // Função para redirecionar para o github Contagem Regressiva De Namoro
@@ -81,6 +81,19 @@ function redirecionarParaPagina14() {
     // Redireciona para outra página
     window.open("https://wa.me/5521966487406", "_blank");
 }
+
+// Função para redirecionar para o github qrcode
+function redirecionarParaPagina15() {
+    // Redireciona para outra página
+    window.open("https://github.com/FabioHTGuimaraes/Gerador-QrCode", "_blank");
+}
+
+// Função para redirecionar para o site qrcode
+function redirecionarParaPagina16() {
+    // Redireciona para outra página
+    window.open("https://geradorqrcodefg.netlify.app/", "_blank");
+}
+
 
 
 
